@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+body {
+  margin: 0;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  font-family: "JetBrains Mono";
+}
+
+.gene {
+  display: grid;
+  justify-items: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.entry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80vw;
+}
+
+.entry > input[type="text"] {
+  font-family: "JetBrains Mono";
+  width: 100vw;
+  height: 30px;
+  border-radius: 20px;
+  position: relative;
+  outline: none;
+  transition: all ease 0.5s;
+  background-color: aliceblue;
+  padding: 0 14px;
+}
+
+.entry > input[type="text"]:focus {
+  transform: translate(0, 30px);
+}
+
+.entry > label {
+  position: absolute;
+  left: 14px;
+  pointer-events: none;
+}
+
+.output {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  background-color: aliceblue;
+  border-radius: 7px;
+  margin: 60px 1rem 20px 1rem;
+  padding: 0 1rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  width: 100%;
+}
+
+.text {
+  word-break: break-all;
+  margin-right: 1rem;
+}
+
+.btns {
+  gap: 7px;
+  display: flex;
+  align-items: center;
+}
+
+svg {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin: 5px;
+  appearance: none;
+  background-color: gray;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background: no-repeat center;
+  background-color: green;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='14px' height='10px' viewBox='0 0 14 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 59.1 (86144) - https://sketch.com --%3E%3Ctitle%3Echeck%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='ios_modification' transform='translate(-27.000000, -191.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cg id='Group-Copy' transform='translate(0.000000, 164.000000)'%3E%3Cg id='ic-check-18px' transform='translate(25.000000, 23.000000)'%3E%3Cpolygon id='check' points='6.61 11.89 3.5 8.78 2.44 9.84 6.61 14 15.56 5.05 14.5 4'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.gene > button {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  font-family: "JetBrains Mono";
+  height: 28px;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.gene > button {
+  margin-top: 10px;
+  height: 48px;
+}
+
+.gene > button:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.gene > button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.gene > button:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
