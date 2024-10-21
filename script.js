@@ -51,7 +51,6 @@ function addList() {
 
 document.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
-    e.preventDefault();
     addList();
   }
 });
